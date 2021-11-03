@@ -1,4 +1,4 @@
-export const quotes = [ "If you understood everything I said, you’d be me", "Man, sometimes it takes you a long time to sound like yourself.",
+export const quotes = ["If you understood everything I said, you’d be me", "Man, sometimes it takes you a long time to sound like yourself.",
 "Don't play what's there; play what's not there.","Do not fear mistakes - there are none.",
 "It’s like, how did Columbus discover America when the Indians were already here? What kind of shit is that, but white people’s shit?",
 "My future starts when I wake up every morning. Every day I find something creative to do with my life.",
@@ -27,19 +27,13 @@ export const quotes = [ "If you understood everything I said, you’d be me", "M
 ,
 "Sometimes you have to play a long time to be able to play like yourself."
 ,
-"If you don't know what to play, play nothing."
-,
-"Do not fear mistakes, there are none."
-,
+"If you don't know what to play, play nothing.","Do not fear mistakes, there are none.",
 "WE WERE ALL UP IN THAT SHIT LIKE A MUTHAFUCKA. IT'S CLEANER THAN A BROKE DICK DOG.",
-,
-"Philly Joe was a bitch. If he'd been a lawyer and white, he would have been president of the United States, because in order to get there you gotta talk fast and carry a lot of bullshit with you; Philly had it all and a lot to spare."
-,
+"Philly Joe was a bitch. If he'd been a lawyer and white, he would have been president of the United States, because in order to get there you gotta talk fast and carry a lot of bullshit with you; Philly had it all and a lot to spare.",
 "But you've got to have style in whatever you do -- writing, music, painting, fashion, boxing, anything.",
-"Sometimes you have to play a long time to play like yourself."
-
-]
+"Sometimes you have to play a long time to play like yourself."]
 
 export const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
-  }
+}
+

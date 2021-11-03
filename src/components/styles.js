@@ -8,10 +8,14 @@ flex-direction: column;
 align-content: center;
 justify-content:center;
     span{
+        transition: 0.5s ease;
         justify-self: center;
         color: white;
         font-size: 2.5rem;
-        padding: 3rem
+        padding: 3rem;
+        @media screen and (max-width: 550px) {
+            font-size: 2rem
+         }
 
     }
 `
@@ -19,13 +23,18 @@ export const Title = styled.h1`
     
     color: white;
     padding: 2.5rem;
-    @media screen and (max-width: 768px) {
-        font-size: 1.5rem
-     }
+    transition: 0.5s linear;
+    @media screen and (max-width: 550px) {
+        font-size: 1.6rem
+    }
 `
 export const QuoteText = styled.h2`
     text-align: center;
     color: white;
     padding: 2.5rem;
+    transition: 0.5s linear;
+    @media screen and (max-width: 550px) {
+        font-size: 1.1rem
+     }
 `
 
