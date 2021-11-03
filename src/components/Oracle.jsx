@@ -18,11 +18,11 @@ const Oracle = () => {
         setAnswer('')
     }
     return (
-    <Container fluid id='oracle' style={{height: '100vh', display: 'flex', flexDirection:'column', alignItems: 'center', paddingTop: '4rem', paddingBottom: '5rem'}}>
+    <Container fluid id='oracle' style={{height: '100vh', display: 'flex', flexDirection:'column', alignItems: 'center', paddingTop: 'rem', paddingBottom: '5rem'}}>
         <Title>Ask Miles a Question:</Title>
         <Form style={{width: '70%', display: 'flex',justifyContent: 'center'}} onSubmit={(e)=> onSubmit(e)}>
             <Form.Group  className="m-5" style={{display: 'flex', flexDirection: 'row', alingItems: 'center', justifyContent: 'center'}}>
-                    <Form.Control disabled={answer && true} type='text' value={question} size='lg' style={{minWidth: '15rem'}}onChange={(e)=> handleChange(e)} />
+                    <Form.Control disabled={answer && true} type='text' value={question} size='lg' style={{minWidth: '12rem'}}onChange={(e)=> handleChange(e)} />
                     <Button style={{marginLeft: '1rem'}} disabled={answer && true} variant="outline-light" type="submit">Ask</Button>
             </Form.Group>
 

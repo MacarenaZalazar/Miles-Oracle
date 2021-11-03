@@ -19,6 +19,9 @@ export const Title = styled.h1`
     
     color: white;
     padding: 2.5rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem
+     }
 `
 export const QuoteText = styled.h2`
     text-align: center;
