@@ -33,7 +33,8 @@ const Oracle = () => {
     }
     const askAgain = () => {
         setAnswer('')
-        window.scrollTo(0,document.body.scrollHeight);
+        const element = document.getElementById("answer");
+        element.scrollIntoView();
     }
 
     return (
