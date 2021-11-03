@@ -23,13 +23,13 @@ const Oracle = () => {
         <Form style={{width: '70%', display: 'flex',justifyContent: 'center'}} onSubmit={(e)=> onSubmit(e)}>
             <Form.Group  className="m-5" style={{display: 'flex', flexDirection: 'row', alingItems: 'center', justifyContent: 'center'}}>
                     <Form.Control disabled={answer && true} type='text' value={question} size='lg' style={{minWidth: '15rem'}}onChange={(e)=> handleChange(e)} />
-                    <Button style={{marginLeft: '1rem'}} disabled={answer && true} variant="outline-light" type="submit">Ask</Button>
+                    <Button href='#answer' style={{marginLeft: '1rem'}} disabled={answer && true} variant="outline-light" type="submit">Ask</Button>
             </Form.Group>
 
         </Form>
         
                 { answer &&
-                <Container fluid style={{display: 'flex', flexDirection: 'column'}}>
+                <Container id='answer' fluid style={{display: 'flex', flexDirection: 'column'}}>
                 <QuoteText> <i>"
                     {answer}"</i>
                 </QuoteText>
