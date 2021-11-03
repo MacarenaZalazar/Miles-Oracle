@@ -29,7 +29,7 @@ const Oracle = () => {
         </Form>
         
                 { answer &&
-                <Container fluid style={{display: 'flex', flexDirection: 'column'}}>
+                <Container fluid style={{display: 'flex', flexDirection: 'column', paddingBottom: '3rem'}}>
                 <QuoteText> <i>"
                     {answer}"</i>
                 </QuoteText>
