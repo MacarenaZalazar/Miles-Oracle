@@ -16,11 +16,12 @@ justify-content:center;
     }
 `
 export const Title = styled.h1`
-    text-align: center;
+    
     color: white;
     padding: 2.5rem;
 `
 export const QuoteText = styled.h2`
+    text-align: center;
     color: white;
     padding: 2.5rem;
 `
