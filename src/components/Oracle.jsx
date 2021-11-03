@@ -35,19 +35,20 @@ const Oracle = () => {
         setAnswer('')
         window.scrollTo(0,document.body.scrollHeight);
     }
+
     return (
     <Container fluid id='oracle' style={{minHeight: '100vh', display: 'flex', flexDirection:'column', alignItems: 'center', paddingTop: 'rem', paddingBottom: '5rem'}}>
         <Title>Ask Miles a Question:</Title>
         <Form style={{width: '70%', display: 'flex',justifyContent: 'center'}} onSubmit={(e)=> onSubmit(e)}>
             <Form.Group  className="m-5" style={{display: 'flex', flexDirection: 'row', alingItems: 'center', justifyContent: 'center'}}>
-                    <Form.Control disabled={answer && true} type='text' value={question} size={size} style={{minWidth: '12rem'}}onChange={(e)=> handleChange(e)} />
-                    <Button style={{marginLeft: '1rem'}} disabled={answer && true} variant="outline-light" type="submit">Ask</Button>
+                    <Form.Control disabled={answer  && true} type='text' value={question} size={size} style={{minWidth: '12rem'}}onChange={(e)=> handleChange(e)} />
+                    <Button style={{marginLeft: '1rem', alignText: 'center'}} disabled={answer || question === '' && true} variant="outline-light" type="submit">Ask</Button>
             </Form.Group>
 
         </Form>
         
             { answer &&
-                <Container fluid style={{display: 'flex', flexDirection: 'column', paddingBottom: '3rem'}}>
+                <Container id='answer' fluid style={{display: 'flex', flexDirection: 'column', paddingBottom: '3rem'}}>
                     <QuoteText> <i>"{answer}"</i></QuoteText>
                 <Button style={{alignSelf: 'center'}} variant='outline-light' onClick={()=> askAgain()}>Ask Again</Button>
                 </Container>
