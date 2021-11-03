@@ -12,18 +12,11 @@ export const AppContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
 `
-export const Footer = styled.footer`
-left: 0;
-bottom: 1.5rem;
-width: 100%;
-color: grey;
-text-align: center;
-`
 export const Player = styled.div`
 width: 100%;
 position: fixed;
 left:0;
-bottom: 1rem;
+bottom: 0;
     .cont{
         border-radius: 3rem;
         display: flex;
