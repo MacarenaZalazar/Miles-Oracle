@@ -18,7 +18,7 @@ const Oracle = () => {
         setAnswer('')
     }
     return (
-    <Container fluid id='oracle' style={{height: '100vh', display: 'flex', flexDirection:'column', alignItems: 'center', paddingTop: '5rem', marginBottom: '3rem'}}>
+    <Container fluid id='oracle' style={{height: '100vh', display: 'flex', flexDirection:'column', alignItems: 'center', paddingTop: '4rem', paddingBottom: '5rem'}}>
         <Title>Ask Miles a Question:</Title>
         <Form style={{width: '70%', display: 'flex',justifyContent: 'center'}} onSubmit={(e)=> onSubmit(e)}>
             <Form.Group  className="m-5" style={{display: 'flex', flexDirection: 'row', alingItems: 'center', justifyContent: 'center'}}>
